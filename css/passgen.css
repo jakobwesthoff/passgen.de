@@ -1,0 +1,105 @@
+html, body {
+	height: 100%;
+	margin: 0px;                
+}
+body {
+	font-family:Verdana;
+	background-color: #ffffff;
+} 
+
+a {
+	color: #444444;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ff7131;
+	text-decoration:none;
+}
+
+td.wrapper {                
+	vertical-align: middle;
+	text-align: center;
+	width:100%;
+}
+
+div.wrapper {
+	width: 35em;
+	margin:auto;
+}
+
+.password {
+	font-size: 1.4em;
+	color: #ff7131;
+}
+
+div#footer {
+	font-size: 0.7em;
+	margin-top: 18px;
+	margin-bottom: 5em;
+}
+
+div#error {
+	font-size: 1.4em;
+	color: #ff7131;
+}
+
+table {
+	width: 100%;
+	height: 100%;                
+}
+
+h1 {
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 0.9em;
+	text-align: left;
+	padding: 0px 0px 4px 0px;
+	margin: 0px; 
+}
+h2 {
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 0.75em;
+	text-align: left;
+	padding: 0px 0px 8px 0px;
+	margin: 0px; 
+	text-align: center;
+}
+div.box {
+	border: 1px dashed #aaaaaa;
+	padding: 15px 15px 18px 15px;
+}
+div.aligned_content_area {
+	text-align: left;
+	font-size: 0.65em;
+}
+form input {
+	border: 1px dashed #999999;
+	margin: 0px 0px 0px 0px;
+}
+form div.entry {
+	margin: 0px 0px 6px 0px;
+}
+form div.submit_area {
+	float:right;
+	padding: 10px 0px 0px 0px;
+}
+div.clear_all {
+	clear: both;
+}
+div.configlink {
+	text-align: right;
+	font-size: 0.7em;
+}
+
+.configlink .modal {
+    text-align: initial;
+    font-size: initial;
+}
+
+#passwordLength {
+    width: 80px;
+}
