@@ -18,7 +18,7 @@ define([
                 numbers: true,
                 symbols: false,
                 length: 32
-            }
+            };
         },
 
         render: function() {
@@ -47,7 +47,6 @@ define([
 
         handleConfiguration: function(configuration) {
             var passwordRef = this.refs.password;
-            console.log(configuration);
             this.setState(configuration, function() {
                 passwordRef.refreshPassword();
             });

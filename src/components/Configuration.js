@@ -96,7 +96,6 @@ define([
         },
 
         _getActiveConfiguration: function() {
-            console.log(this.refs.lowercase);
             return {
                 lowercase: this.refs.lowercase.state.checked,
                 uppercase: this.refs.uppercase.state.checked,
