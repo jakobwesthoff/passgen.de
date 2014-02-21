@@ -1,12 +1,15 @@
 /** @jsx React.DOM */
 define([
     "react",
-    "jsx!components/HelloMessage"
+    "jsx!components/Passgen"
 ], function(
     React,
-    HelloMessage
+    Passgen
 ) {
     /*jshint ignore:start*/
-    React.renderComponent(<HelloMessage name="John" />, document.getElementsByTagName("body")[0]);
+    React.renderComponent(
+        <Passgen />,
+        document.getElementsByTagName("body")[0]
+    );
     /*jshint ignore:end*/
 });

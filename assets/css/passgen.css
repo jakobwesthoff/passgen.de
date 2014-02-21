@@ -28,7 +28,7 @@ div.wrapper {
 	margin:auto;
 }
 
-div#pw {
+.password {
 	font-size: 1.4em;
 	color: #ff7131;
 }
