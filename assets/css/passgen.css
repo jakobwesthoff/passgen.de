@@ -94,3 +94,12 @@ div.configlink {
 	text-align: right;
 	font-size: 0.7em;
 }
+
+.configlink .modal {
+    text-align: initial;
+    font-size: initial;
+}
+
+#passwordLength {
+    width: 80px;
+}
