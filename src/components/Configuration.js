@@ -55,7 +55,7 @@ define([
                                         </div>
                                         <div className="form-group">
                                             <label htmlFor="passwordLength">Length</label>
-                                            <Slider ref="length" id="passwordLength" rangeStart="1" rangeEnd="128" defaultValue={this.props.configuration.length} />
+                                            <Slider ref="length" id="passwordLength" rangeStart="1" rangeEnd="64" defaultValue={this.props.configuration.length} />
                                         </div>
                                     </form>
                                 </div>
