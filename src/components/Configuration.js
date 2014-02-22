@@ -21,8 +21,8 @@ define([
         render: function() {
             /*jshint ignore:start*/
             return (
-                <div>
-                    <a href="#" onClick={this.handleModalOpen}>{this.props.children}</a>
+                <div className="configuration">
+                    <i className="fa fa-cog fa-4x" onClick={this.handleModalOpen}></i>
 
                     <div className="modal fade" ref="configurationModal" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div className="modal-dialog">

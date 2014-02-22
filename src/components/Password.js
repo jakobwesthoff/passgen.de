@@ -18,7 +18,9 @@ define([
         render: function() {
             /*jshint ignore:start*/
             return (
-                <span className="password">{this.state.password}</span>
+                <div className="password">
+                    {this.state.password}
+                </div>
             );
             /*jshint ignore:end*/
         },

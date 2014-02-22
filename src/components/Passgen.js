@@ -26,19 +26,15 @@ define([
             return (
                 <PageCenter>
                     <h1>Your new password:</h1>
-                    <div className="box">
+                    <div className="password-box">
                         <Password ref="password"
                                   lowercase={this.state.lowercase}
                                   uppercase={this.state.uppercase}
                                   numbers={this.state.numbers}
                                   symbols={this.state.symbols}
                                   length={this.state.length} />
-                    </div>
-                    <div className="configlink">
                         <Configuration configuration={this.state}
-                                       onOk={this.handleConfiguration}>
-                            Configure password creation
-                        </Configuration>
+                                       onOk={this.handleConfiguration} />
                     </div>
                 </PageCenter>
             );
