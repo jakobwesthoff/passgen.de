@@ -46,7 +46,7 @@ define([
                 set: jQuery.proxy(function() {
                     this.setState({
                         value: jQuery(this.refs.slider.getDOMNode()).val()
-                    })
+                    });
                 }, this)
             });
         }
