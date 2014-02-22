@@ -14939,7 +14939,9 @@ define('components/Password',[
         render: function() {
             /*jshint ignore:start*/
             return (
-                React.DOM.span( {className:"password"}, this.state.password)
+                React.DOM.div( {className:"password"}, 
+                    this.state.password
+                )
             );
             /*jshint ignore:end*/
         },
@@ -25908,8 +25910,8 @@ define('components/Configuration',[
         render: function() {
             /*jshint ignore:start*/
             return (
-                React.DOM.div(null, 
-                    React.DOM.a( {href:"#", onClick:this.handleModalOpen}, this.props.children),
+                React.DOM.div( {className:"configuration"}, 
+                    React.DOM.i( {className:"fa fa-cog fa-4x", onClick:this.handleModalOpen}),
 
                     React.DOM.div( {className:"modal fade", ref:"configurationModal", tabIndex:"-1", role:"dialog", 'aria-labelledby':"myModalLabel", 'aria-hidden':"true"}, 
                         React.DOM.div( {className:"modal-dialog"}, 
@@ -26027,19 +26029,15 @@ define('components/Passgen',[
             return (
                 PageCenter(null, 
                     React.DOM.h1(null, "Your new password:"),
-                    React.DOM.div( {className:"box"}, 
+                    React.DOM.div( {className:"password-box"}, 
                         Password( {ref:"password",
                                   lowercase:this.state.lowercase,
                                   uppercase:this.state.uppercase,
                                   numbers:this.state.numbers,
                                   symbols:this.state.symbols,
-                                  length:this.state.length} )
-                    ),
-                    React.DOM.div( {className:"configlink"}, 
+                                  length:this.state.length} ),
                         Configuration( {configuration:this.state,
-                                       onOk:this.handleConfiguration}, 
-                            " Configure password creation "
-                        )
+                                       onOk:this.handleConfiguration} )
                     )
                 )
             );

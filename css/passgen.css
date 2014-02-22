@@ -1,98 +1,33 @@
 html, body {
-	height: 100%;
-	margin: 0px;                
+    min-width:600px;
+    height:100%;
+    position:relative;
+    background: -webkit-radial-gradient(#ff7131, #6b2100);
+    background: radial-gradient(#ff7131, #6b2100);
+    overflow:hidden;
 }
+
 body {
 	font-family:Verdana;
-	background-color: #ffffff;
-} 
-
-a {
-	color: #444444;
-	text-decoration: none;
 }
 
-a:hover {
-	color: #ff7131;
-	text-decoration:none;
-}
-
-td.wrapper {                
+td.wrapper {
 	vertical-align: middle;
 	text-align: center;
 	width:100%;
 }
 
 div.wrapper {
-	width: 35em;
-	margin:auto;
-}
-
-.password {
-	font-size: 1.4em;
-	color: #ff7131;
-}
-
-div#footer {
-	font-size: 0.7em;
-	margin-top: 18px;
-	margin-bottom: 5em;
-}
-
-div#error {
-	font-size: 1.4em;
-	color: #ff7131;
+    max-width: 80%;
+    min-width: 800px;
+    width: 100%;
+    margin:auto;
+    padding: 0 10px;
 }
 
 table {
 	width: 100%;
 	height: 100%;                
-}
-
-h1 {
-	color: #000000;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 0.9em;
-	text-align: left;
-	padding: 0px 0px 4px 0px;
-	margin: 0px; 
-}
-h2 {
-	color: #000000;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 0.75em;
-	text-align: left;
-	padding: 0px 0px 8px 0px;
-	margin: 0px; 
-	text-align: center;
-}
-div.box {
-	border: 1px dashed #aaaaaa;
-	padding: 15px 15px 18px 15px;
-}
-div.aligned_content_area {
-	text-align: left;
-	font-size: 0.65em;
-}
-form input {
-	border: 1px dashed #999999;
-	margin: 0px 0px 0px 0px;
-}
-form div.entry {
-	margin: 0px 0px 6px 0px;
-}
-form div.submit_area {
-	float:right;
-	padding: 10px 0px 0px 0px;
-}
-div.clear_all {
-	clear: both;
-}
-div.configlink {
-	text-align: right;
-	font-size: 0.7em;
 }
 
 .configlink .modal {
@@ -115,4 +50,44 @@ div.configlink {
     max-width: 230px;
     width: 100%;
     float: left;
+}
+
+.password-box {
+    box-shadow: 0 1px 0 rgba(255,255,255,.15),
+                0 2px 4px rgba(0,0,0,.2) inset,
+                0 0 12px rgba(255,255,255,.1);
+    padding:8px 20px;
+    background: rgba(0,0,0,.1);
+    border-radius:10px;
+    position: relative;
+}
+
+.password {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-right: 64px;
+    overflow: auto;
+}
+
+.configuration {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    float: right;
+    width: 64px;
+    height: 50px;
+    overflow: hidden;
+    text-align: initial;
+}
+
+.configuration i.fa {
+    background: transparent;
+    color: rgba(255,255,255, .3);
+    cursor: pointer;
+    transition: color .3s ease;
+}
+
+.configuration i.fa:hover {
+    color: rgba(255,255,255, .9);
 }
