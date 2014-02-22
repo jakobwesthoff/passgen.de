@@ -102,4 +102,17 @@ div.configlink {
 
 #passwordLength {
     width: 80px;
+    float: left;
+    margin-left: 32px;
+    margin-top: -8px;
+}
+
+.noUi-connect {
+    background: #ff7131;
+}
+
+.password-length-slider {
+    max-width: 230px;
+    width: 100%;
+    float: left;
 }
