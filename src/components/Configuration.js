@@ -1,16 +1,18 @@
 /** @jsx React.DOM */
 define([
     "react",
+    "jsx!components/Slider",
     "jquery",
     "bootstrap"
 ], function(
     React,
+    Slider,
     jQuery
 ) {
     var Configuration = React.createClass({
         componentDidMount: function() {
             jQuery(this.refs.configurationModal.getDOMNode()).modal({
-                backdrop: true,
+                backdrop: "static",
                 keyboard: true,
                 show: false
             });
@@ -53,7 +55,7 @@ define([
                                         </div>
                                         <div className="form-group">
                                             <label htmlFor="passwordLength">Length</label>
-                                            <input type="number" className="form-control" id="passwordLength" ref="length" defaultValue={this.props.configuration.length}/>
+                                            <Slider ref="length" id="passwordLength" rangeStart="1" rangeEnd="128" defaultValue={this.props.configuration.length} />
                                         </div>
                                     </form>
                                 </div>

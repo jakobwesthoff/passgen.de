@@ -7,10 +7,14 @@ require.config({
         "jsx": "../vendor/require-jsx/jsx",
         "react": "../bower_components/react/react",
         "jquery": "../bower_components/jquery/dist/jquery",
-        "bootstrap": "../vendor/bootstrap/bootstrap"
+        "bootstrap": "../vendor/bootstrap/bootstrap",
+        "nouislider": "../bower_components/nouislider/jquery.nouislider"
     },
     "shim": {
         "bootstrap": {
+            deps: ["jquery"]
+        },
+        "nouislider": {
             deps: ["jquery"]
         }
     }

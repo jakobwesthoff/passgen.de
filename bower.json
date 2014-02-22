@@ -10,6 +10,7 @@
     "react": "~0.8.0"
   },
   "devDependencies": {
-    "jquery": "~2.1.0"
+    "jquery": "~2.1.0",
+    "nouislider": "~5.0.0"
   }
 }
