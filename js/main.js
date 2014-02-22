@@ -25942,7 +25942,7 @@ define('components/Configuration',[
                                         ),
                                         React.DOM.div( {className:"form-group"}, 
                                             React.DOM.label( {htmlFor:"passwordLength"}, "Length"),
-                                            Slider( {ref:"length", id:"passwordLength", rangeStart:"1", rangeEnd:"128", defaultValue:this.props.configuration.length} )
+                                            Slider( {ref:"length", id:"passwordLength", rangeStart:"1", rangeEnd:"64", defaultValue:this.props.configuration.length} )
                                         )
                                     )
                                 ),
